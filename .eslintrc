@@ -1,0 +1,15 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"quotes": ["error", "single", { "allowTemplateLiterals": true }],
+		"indent": ["error", "tab"],
+		"semi": ["error", "never"],
+		"max-len": ["error", { "code": 150 }]
+	}
+}
