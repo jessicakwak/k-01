@@ -5,7 +5,7 @@ module.exports = {
 	toPower: (a, b) => {
 		return typeof a == 'number' && typeof b == 'number' ? Math.pow(a, b) : NaN
 	},
-	getRandom: () => {
-		return Math.random() * 10 + 1
+	getRandom: (a = 1, b = 10) => {
+		return Math.random() * (b - a) + a
 	}
 }
