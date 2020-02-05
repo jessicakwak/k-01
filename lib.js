@@ -10,5 +10,8 @@ module.exports = {
 	},
 	getSum: arr => {
 		return arr.filter(e => typeof e == 'number').reduce((t, i) => t + i)
+	},
+	getNumbers: arr => {
+		return arr.filter(e => typeof e == 'number')
 	}
 }
