@@ -50,5 +50,8 @@ module.exports = {
 			reversed = reversed + ' ' + splitted[i]
 		}
 		return reversed
+	},
+	search: (arr, str) => {
+		return arr.filter(e => e.toLowerCase().includes(str.toLowerCase()))
 	}
 }
