@@ -24,5 +24,8 @@ module.exports = {
 			}
 		})
 		return filtered
+	},
+	getEven: arr => {
+		return arr.filter(e => e % 2 == 0)
 	}
 }
