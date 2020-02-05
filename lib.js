@@ -27,10 +27,6 @@ module.exports = {
 		return Object.values(obj)
 	},
 	getNames: arr => {
-		let names = []
-		arr.forEach(e => {
-			names.push(e.name)
-		})
-		return names
+		return arr.map(e => e.name)
 	}
 }
