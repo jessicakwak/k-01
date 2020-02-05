@@ -39,5 +39,8 @@ module.exports = {
 	deleteProperty: (arr, key) => {
 		arr.forEach(e => delete e[key])
 		return arr
+	},
+	merge: (arr1, arr2) => {
+		return arr1.map((e, i) => Object.assign(e, arr2[i]))
 	}
 }
