@@ -15,6 +15,14 @@ module.exports = {
 		return arr.filter(e => typeof e == 'number')
 	},
 	getGreaterThan: (arr, num) => {
-		return arr.filter(e => e > num)
+		let filtered = []
+		arr.forEach(e => {
+			if (typeof e == 'number' && e > num) {
+				filtered.push(e)
+			} else if (typeof e == 'string' && e.length > num) {
+				filtered.push(e)
+			}
+		})
+		return filtered
 	}
 }
