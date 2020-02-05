@@ -35,5 +35,9 @@ module.exports = {
 				[key]: e[key]
 			}
 		})
+	},
+	deleteProperty: (arr, key) => {
+		arr.forEach(e => delete e[key])
+		return arr
 	}
 }
