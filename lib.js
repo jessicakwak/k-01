@@ -30,5 +30,8 @@ module.exports = {
 	},
 	getKeys: obj => {
 		return Object.keys(obj)
+	},
+	getValues: obj => {
+		return Object.values(obj)
 	}
 }
