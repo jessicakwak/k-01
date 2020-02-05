@@ -33,5 +33,12 @@ module.exports = {
 	},
 	getValues: obj => {
 		return Object.values(obj)
+	},
+	getNames: arr => {
+		let names = []
+		arr.forEach(e => {
+			names.push(e.name)
+		})
+		return names
 	}
 }
