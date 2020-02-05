@@ -7,5 +7,8 @@ module.exports = {
 	},
 	getRandom: (a = 1, b = 10) => {
 		return Math.random() * (b - a) + a
+	},
+	getSum: arr => {
+		return arr.filter(e => typeof e == 'number').reduce((t, i) => t + i)
 	}
 }
