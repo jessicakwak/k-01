@@ -27,5 +27,8 @@ module.exports = {
 	},
 	getEven: arr => {
 		return arr.filter(e => e % 2 == 0)
+	},
+	getKeys: obj => {
+		return Object.keys(obj)
 	}
 }
