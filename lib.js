@@ -13,5 +13,8 @@ module.exports = {
 	},
 	getNumbers: arr => {
 		return arr.filter(e => typeof e == 'number')
+	},
+	getGreaterThan: (arr, num) => {
+		return arr.filter(e => e > num)
 	}
 }
