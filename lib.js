@@ -28,5 +28,12 @@ module.exports = {
 	},
 	getNames: arr => {
 		return arr.map(e => e.name)
+	},
+	selectProperty: (arr, key) => {
+		return arr.map(e => {
+			return {
+				[key]: e[key]
+			}
+		})
 	}
 }
