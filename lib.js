@@ -44,12 +44,10 @@ module.exports = {
 		return arr1.map((e, i) => Object.assign(e, arr2[i]))
 	},
 	flipWords: str => {
-		let splitted = str.split(' ')
-		let reversed = splitted[splitted.length - 1]
-		for (i = splitted.length - 2; i >= 0; i--) {
-			reversed = reversed + ' ' + splitted[i]
-		}
-		return reversed
+		return str
+			.split(' ')
+			.reverse()
+			.join(' ')
 	},
 	search: (arr, str) => {
 		return arr.filter(e => e.toLowerCase().includes(str.toLowerCase()))
